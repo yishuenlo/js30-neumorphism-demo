@@ -1,0 +1,82 @@
+:root{
+    --color: hsl(0, 0%, 94%);
+    --text-color: #555;
+    /* --distance: 20px; */
+    --shadowDistance: 20px;
+    --highlightDistance: -20px;
+    --blur: 40px;
+    --highlight: hsl(0, 0%, 100%);
+    --shadow: hsl(0, 0%, 90%);
+}
+
+body, main, div, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'fira sans', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: var(--text-color);
+    background: var(--color);
+}
+
+h1{
+    font-weight: 300;
+}
+
+main{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4em auto;
+}
+
+.preview-container{
+    margin: 5em;
+}
+
+.preview{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background: var(--color);
+    box-shadow: var(--shadowDistance) var(--shadowDistance) var(--blur) var(--shadow),
+                var(--highlightDistance) var(--highlightDistance) var(--blur) var(--highlight);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+}
+
+input[type="range"]{
+    width: 100%;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+label{
+    margin-right: 1em;
+}
+
+#color{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=range] {
+    height: 25px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+
+

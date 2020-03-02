@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+    <title>Neumorphism Demo</title>
+</head>
+<body>
+    <main>
+        <h1>Neumorphism Demo</h1>
+        <div class="app">
+            <div class="preview-container">
+                <div class="preview"></div>
+            </div>
+
+            <div class="config">
+                <div class="row">
+                    <label for="color">Color:</label>
+                    <input id="color" name="color" type="color" value="hsl(0, 0%, 94%)">
+                </div>
+
+                <div class="row">
+                    <label for="distance">Distance:</label>
+                    <input id="distance" name="distance" type="range" data-unit="px" value="20" min="5" max="20"
+                        step="1">
+                </div>
+
+                <div class="row">
+                    <label for="blur">Blur:</label>
+                    <input id="blur" name="blur" type="range" data-unit="px" value="40" min="10" max="40" step="1">
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
